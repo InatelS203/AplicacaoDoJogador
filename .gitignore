@@ -98,7 +98,59 @@ crashlytics-build.properties
 *.ogg
 *.ogv
 *.reg
-*.nib
+Pastas e arquivos temporários do Unity
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+Meta files devem ser comitados
+*.pidb.meta
+*.pdb.meta
+.mdb.meta
+
+Ignorar arquivos temporários do Visual Studio e Jetbrains Rider
+.vs/
+.gradle/
+/[Aa]ssets/Plugins/Editor/JetBrains
+
+Arquivos de solução e projetos autogerados
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+Relatórios de crash
+sysinfo.txt
+
+Builds e pacotes gerados
+*.apk
+*.aab
+*.unitypackage
+.app
+
+Addressables
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata//.bin
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata//.hash*
+
+Arquivos do Asset Store podem ser ignorados
+/[Aa]ssets/AssetStoreTools**.nib
 *.plst
 *.pdb
 >>>>>>> master
