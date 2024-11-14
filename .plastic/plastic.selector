@@ -1,0 +1,4 @@
+repository "AplicacaoDoJogador@pivoto@cloud"
+  path "/"
+    br "/main"
+    co "/main"
