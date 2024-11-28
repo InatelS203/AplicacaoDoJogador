@@ -1,0 +1,40 @@
+ using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+using UnityEngine;
+
+ public static Menu Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                Debug.Log("Silas: Criando instância única do Menu");
+                _instance = FindObjectOfType<Menu>();
+                if (_instance == null)
+                {
+                    GameObject obj = new GameObject("Menu");
+                    _instance = obj.AddComponent<Menu>();
+                }
+            }
+            return _instance;
+        }
+    }
+
+    private void Awake()
+    {
+        if (_instance != null && _instance != this)
+        {
+            Destroy(gameObject);
+            Debug.Log("Silas: Instância duplicada do Menu destruída.");
+            return;
+        }
+        _instance = this;
+        DontDestroyOnLoad(gameObject); // Mantém a instância entre cenas
+        Debug.Log("Silas: Menu configurado como Singleton.");
+    }
+
+    public void StartMenu()
+    {
+        Debug.Log("Silas: Menu inicializado.");
+    }

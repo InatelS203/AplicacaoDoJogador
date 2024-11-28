@@ -1,0 +1,51 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Partida : MonoBehaviour
+{
+    private List<IObservador> observadores = new List<IObservador>();
+
+    public void RegistrarObservador(IObservador observador)
+    {
+        observadores.Add(observador);
+        Debug.Log("Silas: Observador registrado.");
+    }
+
+    public void RemoverObservador(IObservador observador)
+    {
+        observadores.Remove(observador);
+        Debug.Log("Silas: Observador removido.");
+    }
+
+    private void NotificarObservadores(string evento)
+    {
+        foreach (IObservador observador in observadores)
+        {
+            observador.Atualizar(evento);
+        }
+    }
+
+    public void FimDePartida()
+    {
+        Debug.Log("Silas: Partida finalizada.");
+        NotificarObservadores("Fim da partida");
+    }
+
+    public void AtualizarPontuacao(int placarP1, int placarP2)
+    {
+        Debug.Log($"Silas: Placar atualizado. P1: {placarP1}, P2: {placarP2}");
+        NotificarObservadores($"Atualização de placar - P1: {placarP1}, P2: {placarP2}");
+    }
+}
+
+using UnityEngine;
+
+public class Jogador : MonoBehaviour, IObservador
+{
+    public string Nome;
+
+    public void Atualizar(string evento)
+    {
+        Debug.Log($"Silas: Jogador {Nome} recebeu notificação - {evento}");
+    }
+}

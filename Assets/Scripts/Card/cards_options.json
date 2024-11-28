@@ -1,0 +1,164 @@
+{
+    "cards_options":[
+        {
+            "card":{
+                 "foto": "string",
+                 "descricao": "string",
+                 "tipo":"string",
+                 "poder":"integer"
+                   }
+        },
+        {
+            "card":{
+                 "foto": "string",
+                 "descricao": "string",
+                 "tipo":"string",
+                 "poder":"integer"
+                   }
+        },
+        {
+            "card":{
+                 "foto": "string",
+                 "descricao": "string",
+                 "tipo":"string",
+                 "poder":"integer"
+                   }
+        },
+        {
+            "card":{
+                 "foto": "string",
+                 "descricao": "string",
+                 "tipo":"string",
+                 "poder":"integer"
+                   }
+        },
+        {
+            "card":{
+                 "foto": "string",
+                 "descricao": "string",
+                 "tipo":"string",
+                 "poder":"integer"
+                   }
+        },
+        {
+            "card":{
+                 "foto": "string",
+                 "descricao": "string",
+                 "tipo":"string",
+                 "poder":"integer"
+                   }
+        },
+        {
+            "card":{
+                 "foto": "string",
+                 "descricao": "string",
+                 "tipo":"string",
+                 "poder":"integer"
+                   }
+        },
+        {
+            "card":{
+                 "foto": "string",
+                 "descricao": "string",
+                 "tipo":"string",
+                 "poder":"integer"
+                   }
+        },
+        {
+            "card":{
+                 "foto": "string",
+                 "descricao": "string",
+                 "tipo":"string",
+                 "poder":"integer"
+                   }
+        },
+        {
+            "card":{
+                 "foto": "string",
+                 "descricao": "string",
+                 "tipo":"string",
+                 "poder":"integer"
+                   }
+        },
+        {
+            "card":{
+                 "foto": "string",
+                 "descricao": "string",
+                 "tipo":"string",
+                 "poder":"integer"
+                   }
+        },
+        {
+            "card":{
+                 "foto": "string",
+                 "descricao": "string",
+                 "tipo":"string",
+                 "poder":"integer"
+                   }
+        },
+        {
+            "card":{
+                 "foto": "string",
+                 "descricao": "string",
+                 "tipo":"string",
+                 "poder":"integer"
+                   }
+        },
+        {
+            "card":{
+                 "foto": "string",
+                 "descricao": "string",
+                 "tipo":"string",
+                 "poder":"integer"
+                   }
+        },
+        {
+            "card":{
+                 "foto": "string",
+                 "descricao": "string",
+                 "tipo":"string",
+                 "poder":"integer"
+                   }
+        },
+        {
+            "card":{
+                 "foto": "string",
+                 "descricao": "string",
+                 "tipo":"string",
+                 "poder":"integer"
+                   }
+        },
+        {
+            "card":{
+                 "foto": "string",
+                 "descricao": "string",
+                 "tipo":"string",
+                 "poder":"integer"
+                   }
+        },
+        {
+            "card":{
+                 "foto": "string",
+                 "descricao": "string",
+                 "tipo":"string",
+                 "poder":"integer"
+                   }
+        },
+        {
+            "card":{
+                 "foto": "string",
+                 "descricao": "string",
+                 "tipo":"string",
+                 "poder":"integer"
+                   }
+        },
+        {
+            "card":{
+                 "foto": "string",
+                 "descricao": "string",
+                 "tipo":"string",
+                 "poder":"integer"
+                   }
+        }
+    ]
+}

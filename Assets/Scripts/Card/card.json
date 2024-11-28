@@ -1,0 +1,9 @@
+{
+    "card":{
+        "foto": "string",
+        "descricao": "string",
+        "tipo":"string",
+        "poder":"integer"
+    }
+    
+}

@@ -1,0 +1,44 @@
+using System;
+using System.Text.Json;
+
+public class Card
+{
+    public string Foto { get; set; }
+    public string Descricao { get; set; }
+    public string Tipo { get; set; }
+    public int Poder { get; set; }
+}
+
+public class Program
+{
+    public static void Main()
+    {
+        // JSON string
+        string json = @"
+        {
+            ""card"": {
+                ""foto"": ""imagem.png"",
+                ""descricao"": ""Exemplo de descrição"",
+                ""tipo"": ""Ataque"",
+                ""poder"": 100
+            }
+        }";
+
+        // Deserializar JSON para objeto
+        var cardWrapper = JsonSerializer.Deserialize<CardWrapper>(json);
+
+        // Acessar o objeto card
+        if (cardWrapper != null && cardWrapper.Card != null)
+        {
+            Console.WriteLine($"Foto: {cardWrapper.Card.Foto}");
+            Console.WriteLine($"Descrição: {cardWrapper.Card.Descricao}");
+            Console.WriteLine($"Tipo: {cardWrapper.Card.Tipo}");
+            Console.WriteLine($"Poder: {cardWrapper.Card.Poder}");
+        }
+    }
+}
+
+public class CardWrapper
+{
+    public Card Card { get; set; }
+}
